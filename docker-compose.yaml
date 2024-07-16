@@ -11,7 +11,7 @@ services:
         - ./backend:/app
     ports: 
       - "3005:3005"
-    command: bash -c "npm install & nodemon app.js"
+    command: bash -c "npm install & npm run start"
 
   frontend:
     container_name: prjManager-frontend
