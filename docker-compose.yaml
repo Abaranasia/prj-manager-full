@@ -9,6 +9,7 @@ services:
     restart: always
     volumes:
         - ./backend:/app
+    network_mode: host
     ports: 
       - "3005:3005"
     command: bash -c "npm install & npm run start"
@@ -21,10 +22,7 @@ services:
     restart: always
     volumes:
         - ./frontend:/app
+    network_mode: host
     ports: 
       - "3000:3000"
     command: bash -c "npm install & npm run start"
-
-networks:
-  host:
-    external: true
