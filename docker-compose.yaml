@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: prjManager-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    restart: always
+    volumes:
+        - ./backend:/app
+    ports: 
+      - "3005:3005"
+    command: bash -c "npm install & nodemon app.js"
+
+  frontend:
+    container_name: prjManager-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    restart: always
+    volumes:
+        - ./frontend:/app
+    ports: 
+      - "3000:3000"
+    command: bash -c "npm install & npm run start"
+
+    
