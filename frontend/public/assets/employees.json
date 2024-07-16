@@ -1,0 +1,213 @@
+[{
+  "name": "Jesús Ponce",
+  "email": "jesus.ponce@icareweb.com",
+  "profile": "Full Stack senior developer",
+  "enrol_date": "10/10/2015",
+  "skills": [
+    "front-end development",
+    "back-end development",
+    "data architecture",
+    "tech leader",
+    "devOps"
+  ],
+  "technologies": [
+    "Python",
+    "React.js",
+    "Javascript",
+    "Polymer",
+    "Angular.js",
+    "Cobol"
+  ]
+},{
+  "name": "Higinio Martí",
+  "email": "higinio.marti@icareweb.com",
+  "profile": "Full Stack senior developer",
+  "enrol_date": "10/10/2019",
+  "skills": [
+    "back-end development",
+    "front-end development",
+    "data architecture",
+    "scrum master",
+    "devOps"
+  ],
+  "technologies": [
+    "Python",
+    "React.js",
+    "Javascript",
+    "Rust",
+    "Docker"
+  ]
+},{
+  "name": "Aitor Magnieto",
+  "email": "Aitor.magnieto@icareweb.com",
+  "profile": "Full Stack mid-level developer",
+  "enrol_date": "10/10/2010",
+  "skills": [
+    "front-end development",
+    "back-end development"
+  ],
+  "technologies": [
+    "Python",
+    "React.js",
+    "Javascript",
+    "Java"
+  ]
+},{
+  "name": "Francisco Rodríguez",
+  "email": "francisco.rodriguez@icareweb.com",
+  "profile": "Front-end mid-level developer",
+  "enrol_date": "06/15/2021",
+  "skills": [
+    "front-end development"
+  ],
+  "technologies": [
+    "React.js",
+    "React Native",
+    "Next.js",
+    "Angular",
+    "Python",
+    "nodeJS",
+    "Javascript",
+    "Java",
+    "CSS",
+    "Sass",
+    "Docker"
+  ]
+},{
+  "name": "José Luis Sánchez",
+  "email": "joseluis.sanchez@icareweb.com",
+  "profile": "Front-end junior developer",
+  "enrol_date": "08/26/2021",
+  "skills": [
+    "front-end development"
+  ],
+  "technologies": [
+    "React.js",
+    "Angular",
+    "CSS",
+    "Sass",
+    "Vue",
+    "nodeJS",
+    "Javascript",
+    "Docker"
+  ]
+},{
+  "name": "Diego Nicolás Ríos",
+  "email": "nicolas.rios@icareweb.com",
+  "profile": "Front-end junior developer",
+  "enrol_date": "09/15/2021",
+  "skills": [
+    "front-end development"
+  ],
+  "technologies": [
+    "React.js",
+    "CSS",
+    "Sass",
+    "Javascript",
+    "Docker"
+  ]
+},{
+  "name": "David Salazar",
+  "email": "david.salazar@icareweb.com",
+  "profile": "Front-end junior developer",
+  "enrol_date": "01/20/2022",
+  "skills": [
+    "front-end development",
+    "back-end development"
+  ],
+  "technologies": [
+    "React.js",
+    "CSS",
+    "Sass",
+    "Python",
+    "Javascript",
+    "Java"
+  ]
+},{
+  "name": "Juán Bautista Valls",
+  "email": "juan.vallsbeltran@icareweb.com",
+  "profile": "Front-end junior developer",
+  "enrol_date": "01/07/2022",
+  "skills": [
+    "front-end development"
+  ],
+  "technologies": [
+    "React.js",
+    "CSS",
+    "Sass",
+    "Javascript",
+    "Java"
+  ]
+},{
+  "name": "Michael Guadagnino",
+  "email": "michael.guadagnino@icareweb.com",
+  "profile": "Full-stack senior developer",
+  "enrol_date": "07/01/2016",
+  "skills": [
+    "front-end development",
+    "back-end development",
+    "DevOps"
+  ],
+  "technologies": [
+    "Angular.js",
+    "CSS",
+    "Python",
+    "Javascript"
+  ]
+},{
+  "name": "Guillaume Kern",
+  "email": "guillaume.kern@icareweb.com",
+  "profile": "Full-stack mid-level developer",
+  "enrol_date": "07/01/2020",
+  "skills": [
+    "front-end development",
+    "back-end development"
+  ],
+  "technologies": [
+    "Angular.js",
+    "CSS",
+    "Python",
+    "Javascript"
+  ]
+},{
+  "name": "Gorick Davits",
+  "email": "gorick.davidts@icareweb.com",
+  "profile": "Product Owner",
+  "enrol_date": "07/01/2018",
+  "skills": [
+    "Product Owner"
+  ],
+  "technologies": []
+},{
+  "name": "Ran Kirlian",
+  "email": "abc@gg.com",
+  "profile": "designer",
+  "enrol_date": " 01-01-2022",
+  "skills": [
+    "web design",
+    "graphic design",
+    "3D Design"
+  ],
+  "technologies": [
+    "Photoshop",
+    "Gimp",
+    "Illustrator",
+    "3DMax",
+    "Blender",
+    "Unreal Engine 5"
+  ]
+},{
+  "name": "Dunder Mifflin",
+  "email": "eoeoeo",
+  "profile": "Product Owner",
+  "enrol_date": "2020-04-16",
+  "skills": [
+    "Front-end developer",
+    "UX Designer"
+  ],
+  "technologies": [
+    "Vue.js",
+    "Angular",
+    "Gymp"
+  ]
+}]
