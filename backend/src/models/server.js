@@ -4,7 +4,6 @@ const cors = require('cors');
 const { dbConnection } = require('../database/config');
 
 class Server {
-
   constructor() {
     this.app = express();
     this.app.use(cors());
@@ -41,10 +40,9 @@ class Server {
 
   routes() {
     /*  The routes can be defined here, but it's much more clear to
-    extract them to routes folder and divede them by category */
-    // this.app.get('/api', (req, res) => { res.json({msg: 'get API'})});
+    extract them to routes folder and divide them by category */
 
-    // Instead of define here the routes, we import them from routes folder as if it was a middleware
+    // Instead of defining here the routes, we import them from routes folder
     this.app.use(this.projectsPath, require('../routes/projects'));
     this.app.use(this.employeesPath, require('../routes/employees'))
   };
