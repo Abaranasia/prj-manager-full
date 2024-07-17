@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
 import { Dashboard } from './views/Dashboard/Dashboard';
 import { Project } from './views/ProjectDetail/Project';
@@ -11,16 +11,16 @@ import { AddResource } from './views/AddResource/AddResource';
 
 export const Router = () => {
   return (
-    <Switch>
-      <Route path="/" component={Dashboard} exact />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/projects" component={ProjectList} exact />
-      <Route path="/project" component={Project} exact />
-      <Route path="/project/add" component={AddProject} exact />
-      <Route path="/resources" component={Resources} exact />
-      <Route path="/resource" component={Resource} exact />
-      <Route path="/resource/add" component={AddResource} exact />
-      <Redirect from='*' to='/dashboard' />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Dashboard />} exact />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/projects" element={<ProjectList />} exact />
+      <Route path="/project" element={<Project />} exact />
+      <Route path="/project/add" element={<AddProject />} exact />
+      <Route path="/resources" element={<Resources />} exact />
+      <Route path="/resource" element={<Resource />} exact />
+      <Route path="/resource/add" element={<AddResource />} exact />
+      <Route path="*" element={<Dashboard />} exact />
+    </Routes>
   )
 }
