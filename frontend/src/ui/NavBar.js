@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <div className="nav">
       <div className="header">
-        <h3>Icare </h3>
+        <h3>I-Synth </h3>
         <h5>Project Manager</h5>
       </div>
       <ul className="list">
