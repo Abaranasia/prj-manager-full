@@ -1,7 +1,12 @@
 const { Router } = require('express');
 //const { check } = require('express-validator');
 
-const { employeesGet, employeeGet, employeePost, employeeDelete } = require('../controllers/employees');
+const { 
+    employeesGet, 
+    employeeGet, 
+    employeePost, 
+    employeeDelete,
+} = require('../controllers/employees');
 
 const router = Router();
 
