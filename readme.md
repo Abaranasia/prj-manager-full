@@ -14,7 +14,9 @@
 **Frontend**
 - [x] Update front-end dependencies
 - [ ] Review front-end code and cleanup
-- [x] Add surname field on add employee
+- [x] Replace name and surname by full name
+- [ ] Check mandatory fields in new Resource forms 
+- [ ] Check mandatory fields in new Project forms 
 - [ ] Complete project api calls: post, update, delete
 - [ ] Complete employee api calls: post, update, delete
 - [ ] Replace axios api calls by the interceptor
@@ -26,5 +28,4 @@
 - [ ] Add session auth to api requests
 
 **Maybe**
-- [ ] Replace name and surname by full name
-- [ ] add status filed to Employees
+- [ ] add status field to Employees
