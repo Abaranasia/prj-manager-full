@@ -22,12 +22,12 @@ export const AddResource = () => {
 
   const [formValues, handleInputChange] = useForm({
     name: '',
-    //surname: '',
+    surname: '',
     email: '',
     profile: '',
     enrol_date: '',
   });
-  const { name, email, profile, enrol_date } = formValues;
+  const { name, surname, email, profile, enrol_date } = formValues;
 
   const postEmployee = async (employeeData) => { //Send form data to the API
     const response = await postOneEmployee(employeeData);
@@ -51,6 +51,7 @@ export const AddResource = () => {
     setFormData({
       ...formData,
       name,
+      surname,
       email,
       profile,
       enrol_date,
@@ -67,12 +68,20 @@ export const AddResource = () => {
 
         <FormGroup row className='formRow'>
           <TextField
-            label="Full name"
+            label="Name"
             name="name"
             value={name}
             variant="standard"
             onChange={handleInputChange}
           />
+          <TextField
+            label="Surname"
+            name="surname"
+            value={surname}
+            variant="standard"
+            onChange={handleInputChange}
+          />
+
           <TextField
             label="Email"
             name="email"
