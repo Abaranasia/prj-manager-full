@@ -1,9 +1,9 @@
 ## Project Manager - A simple MERN project
 
 ### Running
-Server run: npm start
-Client run: npm start
-DB run: mongod
+- Server run: npm start
+- Client run: npm start
+- DB run: mongod
 
 ### TODO List
 
@@ -14,7 +14,7 @@ DB run: mongod
 **Frontend**
 - [ ] Update front-end dependencies
 - [ ] Review front-end code and cleanup
-- [ ] Add surname field on add employee
+- [x] Add surname field on add employee
 - [ ] Complete project api calls: post, update, delete
 - [ ] Complete employee api calls: post, update, delete
 - [ ] Replace axios api calls by the interceptor
