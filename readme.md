@@ -12,7 +12,7 @@
 - [x] Review back-end code and cleanup
 
 **Frontend**
-- [ ] Update front-end dependencies
+- [x] Update front-end dependencies
 - [ ] Review front-end code and cleanup
 - [x] Add surname field on add employee
 - [ ] Complete project api calls: post, update, delete
