@@ -25,4 +25,6 @@
 - [ ] Add login
 - [ ] Add session auth to api requests
 
-
+**Maybe**
+- [ ] Replace name and surname by full name
+- [ ] add status filed to Employees
