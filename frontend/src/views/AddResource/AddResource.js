@@ -67,7 +67,7 @@ export const AddResource = () => {
 
         <FormGroup row className='formRow'>
           <TextField
-            label="Name"
+            label="Full Name"
             name="name"
             value={name}
             variant="standard"
