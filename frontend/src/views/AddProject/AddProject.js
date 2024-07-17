@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from "react-router-dom";
 
 import {
   Button,
@@ -14,7 +13,6 @@ import { PageHeader } from '../../ui/PageHeader';
 import { getEmployees } from '../../API/resources/resourcesAPI';
 
 export const AddProject = () => {
-  let history = useHistory();
 
   const [formData, setFormData] = useState(null);
   const [status, setStatus] = useState('nostarted');

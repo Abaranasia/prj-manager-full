@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import {
   Typography
@@ -9,7 +10,8 @@ import { getOneProject } from '../../API/projects/projectsAPI';
 import { PageHeader } from '../../ui/PageHeader';
 import { ResourceCard } from './components/ResourceCard';
 
-export function Project({ location }) {
+export function Project() {
+  const location = useLocation();
   const [project, setProject] = useState({});
 
   const getPrj = async (id) => {
@@ -21,7 +23,7 @@ export function Project({ location }) {
 
   useEffect(() => {
     location.state && getPrj(location.state); // sets project Id to search for
-  }, []);
+  }, [location]);
 
   return (
     <div>

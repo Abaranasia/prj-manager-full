@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 import {
   Paper,
@@ -24,8 +24,7 @@ const headerStyle = {
 
 export function ProjectList() {
   const [projects, setProjects] = useState([]);
-
-  let history = useHistory();
+  const navigate = useNavigate();
 
   const tableHeader = ['name', 'type', 'owner', 'start date', 'end date'];
 
@@ -43,7 +42,7 @@ export function ProjectList() {
 
   const handleClick = (e, id) => {
     console.log("_id: ", id)
-    history.push('/project', id);
+    navigate('/project', {state: id});
   }
 
   return (

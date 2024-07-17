@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   Button,
@@ -14,7 +14,7 @@ import { AddTechnologies } from './components/AddTechnologies';
 import { postOneEmployee } from '../../API/resources/resourcesAPI';
 
 export const AddResource = () => {
-  let history = useHistory();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState(null);
   const [skills, setSkills] = useState([]);
@@ -33,7 +33,7 @@ export const AddResource = () => {
     const response = await postOneEmployee(employeeData);
     if (response) {
       //console.log("response: ", response.data.employee._id);
-      history.push('/resource', response.data.employee._id);
+      navigate('/resource', {state: response.data.employee._id});
     }
   };
 

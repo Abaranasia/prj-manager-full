@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 import {
   Button,
@@ -29,7 +29,7 @@ const headerStyle = {
 };
 
 export const Resources = () => {
-  let history = useHistory();
+  const navigate = useNavigate();
 
   const [resources, setResources] = useState([]);
   const [openDialog, setOpenDialog] = useState(false);
@@ -52,7 +52,7 @@ export const Resources = () => {
 
 
   const handleClick = (e, id) => { // Display detailed information of the resource (employee)
-    history.push('/resource', id);
+    navigate('/resource', {state: id});
   }
 
   const deleteEmployee = async () => {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import {
   Divider,
@@ -10,7 +11,9 @@ import { Box } from '@mui/system';
 import { PageHeader } from '../../ui/PageHeader';
 import { getOneEmployee } from '../../API/resources/resourcesAPI';
 
-export const Resource = ({ location }) => {
+export const Resource = () => {
+  const location = useLocation();
+  
   const [staff, setStaff] = useState({});
 
   const getResource = async (id) => {
@@ -22,7 +25,7 @@ export const Resource = ({ location }) => {
 
   useEffect(() => {
     location.state && getResource(location.state);
-  }, []);
+  }, [location]);
 
   return (
     <div>

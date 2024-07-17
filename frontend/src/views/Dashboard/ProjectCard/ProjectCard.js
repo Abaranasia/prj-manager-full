@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 import {
   Card,
@@ -12,7 +12,7 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 export const ProjectCard = ({ project, prjType }) => {
-  let history = useHistory();
+  const navigate = useNavigate();
   const { _id, name, type, owner, end_date } = project;
 
   const cardColors = { // TODO: class with gradient bg
@@ -21,7 +21,7 @@ export const ProjectCard = ({ project, prjType }) => {
   };
 
   const handleClick = (e, id) => {
-    history.push('/project', id);
+    navigate('/project', {state: id});
   }
 
   return (
