@@ -10,20 +10,24 @@ const EmployeeSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Name is a required field']
   },
-/*   surname: {
+
+  surname: {
     type: String,
-    required: true,
-  }, */
+    required: false,
+  }, 
+
   email: {
     type: String,
     required: true,
     default: "An Email is required"
   },
+
   profile: {
     type: String,
     required: true,
     default: "No profile available"
   },
+
   enrol_date: String,
   skills: [],
   technologies: [],
