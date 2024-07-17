@@ -5,7 +5,6 @@ const Employee = require('../models/employee');
 
 // Lists all projects
 const employeesGet = async (req = request, res = response) => {
-
   const employees = await Employee.find({});
   res.status(200).json({
     employees
@@ -16,7 +15,6 @@ const employeesGet = async (req = request, res = response) => {
 // Lists one specific project by id
 const employeeGet = async (req = request, res = response) => {
   const { id } = req.params; // Reading URLparams with Express
-  console.log(id)
   const employee = await Employee.findOne({ "_id": id }, {});
   res.status(200).json({
     employee
@@ -30,7 +28,7 @@ const employeePost = async (req = request, res = response) => {
   const {
    //id,
     name,
-    //surname,
+    surname,
     email,
     profile,
     enrol_date,
@@ -41,7 +39,7 @@ const employeePost = async (req = request, res = response) => {
   const employee = new Employee({
    // id,
     name,
-    //surname,
+    surname,
     email,
     profile,
     enrol_date,
