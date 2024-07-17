@@ -1,19 +1,13 @@
 const mongoose = require('mongoose');
 
 const dbName = 'prjmanager';
-const url = `mongodb://localhost:27017/${dbName}`;
+const mongoServer= process.env.MONGODB_CNN;
 
+console.log('mongoServer :>> ', mongoServer);
 const dbConnection = async () => {
 
-  try {
-    //await mongoose.connect(process.env.MONGODB_CNN, {
-    await mongoose.connect(url, {
-      //useNewUrlParser: true,
-     // useUnifiedTopology: true
-      // useCreateIndex: true,
-      // useFindAndModify: false
-    });
-
+  try {   
+    await mongoose.connect(`${mongoServer}/${dbName}`);
     console.log('~~~~ Database online ~~~~')
 
   } catch (error) {
