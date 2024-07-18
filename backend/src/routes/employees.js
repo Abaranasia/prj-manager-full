@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const { verifyToken } = require('../helpers/verifyToken');
 //const { check } = require('express-validator');
 
 const { 
@@ -10,6 +11,7 @@ const {
 
 const router = Router();
 
+// Use verifyToken middle ware on endpoints for token auth
 
 router.get('/', employeesGet); // Lists all the employees
 
