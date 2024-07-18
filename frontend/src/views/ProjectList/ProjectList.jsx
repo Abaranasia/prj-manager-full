@@ -22,7 +22,7 @@ const headerStyle = {
   "& .MuiTableCell-head": { color: "white" }
 }
 
-export function ProjectList() {
+export const ProjectList = () => {
   const [projects, setProjects] = useState([]);
   const navigate = useNavigate();
 
@@ -82,3 +82,5 @@ export function ProjectList() {
     </>
   )
 }
+
+export default ProjectList;

@@ -28,7 +28,7 @@ const headerStyle = {
   "& .MuiTableCell-head": { color: "white" }
 };
 
-export const Resources = () => {
+const Resources = () => {
   const navigate = useNavigate();
 
   const [resources, setResources] = useState([]);
@@ -133,3 +133,4 @@ export const Resources = () => {
     </div>
   )
 }
+export default Resources;

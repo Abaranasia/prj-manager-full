@@ -13,7 +13,7 @@ import { AddSkills } from './components/AddSkills';
 import { AddTechnologies } from './components/AddTechnologies';
 import { postOneEmployee } from '../../API/resources/resourcesAPI';
 
-export const AddResource = () => {
+const AddResource = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState(null);
@@ -121,3 +121,5 @@ export const AddResource = () => {
     </div>
   )
 }
+
+export default AddResource;

@@ -10,7 +10,7 @@ import { getOneProject } from '../../API/projects/projectsAPI';
 import { PageHeader } from '../../ui/PageHeader';
 import { ResourceCard } from './components/ResourceCard';
 
-export function Project() {
+const ProjectDetail = () => {
   const location = useLocation();
   const [project, setProject] = useState({});
 
@@ -69,3 +69,5 @@ export function Project() {
     </div>
   )
 }
+
+export default ProjectDetail;

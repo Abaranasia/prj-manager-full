@@ -11,7 +11,7 @@ import { ProjectCard } from './ProjectCard/ProjectCard';
 import { getProjects } from '../../API/projects/projectsAPI';
 
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const [projects, setProjects] = useState([]);
   const [ongoingProjects, setOngoingProjects] = useState([]);
   const [finishedProjects, setFinishedProjects] = useState([])
@@ -95,3 +95,5 @@ export const Dashboard = () => {
     </div>
   )
 }
+
+export default Dashboard;

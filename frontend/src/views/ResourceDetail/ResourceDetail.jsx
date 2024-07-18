@@ -11,7 +11,7 @@ import { Box } from '@mui/system';
 import { PageHeader } from '../../ui/PageHeader';
 import { getOneEmployee } from '../../API/resources/resourcesAPI';
 
-export const Resource = () => {
+const ResourceDetail = () => {
   const location = useLocation();
   
   const [staff, setStaff] = useState({});
@@ -86,3 +86,5 @@ export const Resource = () => {
 
   )
 }
+
+export default ResourceDetail;

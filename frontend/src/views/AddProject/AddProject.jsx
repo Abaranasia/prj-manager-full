@@ -12,7 +12,7 @@ import { useForm } from '../../hooks/useForm';
 import { PageHeader } from '../../ui/PageHeader';
 import { getEmployees } from '../../API/resources/resourcesAPI';
 
-export const AddProject = () => {
+const AddProject = () => {
 
   const [formData, setFormData] = useState(null);
   const [status, setStatus] = useState('nostarted');
@@ -209,3 +209,4 @@ export const AddProject = () => {
     </div>
   )
 }
+export default AddProject;
