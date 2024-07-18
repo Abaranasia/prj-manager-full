@@ -8,6 +8,8 @@ class Server {
     this.app = express();
     this.app.use(cors());
     this.port = process.env.PORT;
+
+    this.loginPath = '/api/login';
     this.projectsPath = '/api/projects';
     this.employeesPath = '/api/employees';
 
@@ -43,6 +45,7 @@ class Server {
     extract them to routes folder and divide them by category */
 
     // Instead of defining here the routes, we import them from routes folder
+    this.app.use(this.loginPath, require('../routes/auth'));
     this.app.use(this.projectsPath, require('../routes/projects'));
     this.app.use(this.employeesPath, require('../routes/employees'))
   };
