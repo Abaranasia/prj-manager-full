@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect, useContext } from 'react';
 
 import {
-    Button,
-    FormGroup,
-    TextField,
-  Typography
+  Button,
+  FormGroup,
+  TextField,
 } from '@mui/material';
-import { Box } from '@mui/system';
 import { PageHeader } from '../../ui/PageHeader';
+import { AuthContext } from '../../contexts';
 
 
- function Login() {
-  const location = useLocation();
+const Login = () => {
+  const authContext = useContext(AuthContext);
 
-const handleSubmit = () => {
-    
-};
+  const handleSubmit = () => {
+    authContext.setAuth({ token: 1 })
+  };
 
-const handleInputChange = () => {
-    
-};
+  const handleInputChange = () => {
+
+  };
 
   return (
-<div>
+    <div>
       <PageHeader title="I-Synth login" />
       <form onSubmit={handleSubmit} className="add_resource_form">
 
-        <FormGroup   row className='formRow'>
+        <FormGroup row className='formRow'>
           <TextField
             label="user"
             name="user"
