@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Route, Routes } from "react-router-dom";
 
-import { Dashboard } from './views/';
-import { ProjectDetail } from './views/';
-import { ProjectList } from './views/';
-import { ResourceDetail } from './views/';
+import { Dashboard } from './views';
+import { ProjectDetail } from './views';
+import { ProjectList } from './views';
+import { ResourceDetail } from './views';
 import { Resources } from './views';
 import { AddProject } from './views';
 import { AddResource } from './views';
 import { Login } from './views';
 import ProtectedRoute from './ui/ProtectedRoute';
-
-let user;
+import { AuthContext } from './contexts';
 
 export const Router = () => {
+
+  const authContext = useContext(AuthContext);
+
   return (
     <Routes>
       <Route path="/" element={<Login />} />
@@ -21,7 +23,7 @@ export const Router = () => {
       <Route 
         path="/dashboard" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <Dashboard />
           </ProtectedRoute>
         } 
@@ -30,7 +32,7 @@ export const Router = () => {
       <Route 
         path="/projects" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <ProjectList />
           </ProtectedRoute>
         } 
@@ -40,7 +42,7 @@ export const Router = () => {
       <Route 
         path="/project" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <ProjectDetail />
           </ProtectedRoute>
         } 
@@ -50,7 +52,7 @@ export const Router = () => {
       <Route 
         path="/project/add" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <AddProject />
           </ProtectedRoute>
         } 
@@ -60,7 +62,7 @@ export const Router = () => {
       <Route 
         path="/resources" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <Resources />
           </ProtectedRoute>
           } 
@@ -70,7 +72,7 @@ export const Router = () => {
       <Route 
         path="/resource" 
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <ResourceDetail />
           </ProtectedRoute>
           } 
@@ -80,14 +82,14 @@ export const Router = () => {
       <Route 
         path="/resource/add"
         element={
-          <ProtectedRoute user={user}>
+          <ProtectedRoute>
             <AddResource />
           </ProtectedRoute>
           } 
         exact 
        />
 
-      <Route path="*" element={<p>There's nothing here: 404!</p>} />
+      <Route path="*" element={<p>There is nothing here: 404!</p>} />
     </Routes>
   )
 }

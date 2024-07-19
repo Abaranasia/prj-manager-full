@@ -1,21 +1,25 @@
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import AuthProvider from './contexts/AuthProvider.jsx';
 
-import { Router } from './Router';
+
 import NavBar from './ui/NavBar';
+import { Router } from './Router';
 
 function App() {
   return (
-    <div className="App">
-
-      <BrowserRouter basename="/">
+    <BrowserRouter basename="/">
+      <AuthProvider>
+        <div className="App">
           <main>
             <NavBar />
             <div className="contents">
               <Router />
             </div>
           </main>
-      </BrowserRouter>
-    </div>
+        </div>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
